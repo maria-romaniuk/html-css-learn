@@ -1,15 +1,20 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
     font-size: 11px;
 }
 .container {
-    width: 800px;
+    width: 792px;
     margin-left: auto;
     margin-right: auto;
 
 }
 .header {
     overflow: hidden;
+    height: 40px;
 }
 .header-logo {
     float: left;
@@ -31,38 +36,136 @@
 
 .hed-nav_box{
     float: left;
+    width: 16%;
+    text-align: center;
+
 
 }
+.hed-nav_box a {
 
+}
 .body {
-    width: 97%;
+    width: 98%;
     overflow: hidden;
-    margin-left: auto;
+    margin-left: 0.4%;
     margin-right: auto;
+    float: left;
 }
 
 .sidebar{
-    width: 20%;
+    width: 17%;
     float: left;
+}
+
+.sidebar-list {
+    overflow: hidden;
+    line-height: 20px;
+    list-style: none;
+}
+
+.sidebar-list li {
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-nav-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.sidebar-nav-box-myp {
+    display: block;
+    width: 59%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.sidebar-nav-box-sm-myp {
+    display: block;
+    width: 28%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+    text-align: right;
+
+}
+.sidebar-nav-box-l {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.sidebar-nav-box-r{
+    display: block;
+    width: 30%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.sidebar-inbox {
+    float: right;
 }
 
 .advert_post{
     width: 100%;
     height: 157px;
 }
-
-
-.main{
+.sidebar-alert {
     width: 80%;
+    height: 108px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.sidebar-alert h3 {
+    padding: 14px 2px 7px 0;
+}
+
+.advert {
+    height: 200px;
+    text-align: center;
+    margin-right: 10px;
+}
+.advert h3 {
+    padding: 14px 2px 7px 0;
+}
+.main{
+    width: 82%;
     float: right;
 
 }
 
+.main-title {
+    height: 29px;
+
+}
+.main-title h4 {
+    padding-top: 9px;
+    padding-left: 7px;
+}
 .main-side{
-    width: 40%;
+    width: 36%;
     float: left;
 
 }
+
+
+.main-content {
+    width: 64%;
+    float: right;
+}
+
 
 .gen-photo {
     width: 100%;
@@ -73,25 +176,25 @@
 }
 
 .pic-gift {
-    float: left;
-
+    overflow: hidden;
+    padding-left: 27px;
 
 }
 .picture {
-    width: 70px;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px;
+    float: left;
+    width: 60px;
+    height: 60px;
 }
 
 .prof_friends {
     overflow: hidden;
-
 }
 .prof-friend-id {
     float: left;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 80px;
+    text-align: center;
 }
 
 .prof-friend-pic {
@@ -100,23 +203,25 @@
 
 }
 
-.main-content {
-    width: 60%;
-    float: right;
-}
-
 .info-row{
     overflow: hidden;
 }
 
 .info-label{
     float: left;
+    width: 35%;
 }
 
 .info-value{
     float: right;
+    width: 65%;
 }
-
+.info-details{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
 .main-photo-header {
     overflow: hidden;
 }
@@ -130,6 +235,107 @@
 }
 
 .photos_prof{
+    overflow: hidden;
+    height: 120px;
+}
+.photo-prof-id {
+    float: left;
+    width: 20%;
+}
+
+.wall-form-header{
+    overflow: hidden;
+}
+
+.wall-label {
+    float: left;
+}
+
+.wall-value {
+    float: right;
+}
+
+.wall-input{
+    width: 100%;
+    height: 30px;
+}
+
+.post{
+    overflow: hidden;
+}
+
+.post-left {
+    float: left;
+    height: 100%;
+    width: 15%;
 
 }
 
+.post-right{
+    width: 84%;
+    float: right;
+    overflow: hidden;
+}
+
+
+.post-pict-id {
+    float: left;
+    width: 50px;
+    height: 50px;
+
+}
+.post-name {
+    float: left;
+}
+
+.post-info {
+    width: 100%;
+}
+
+.post-basement{
+    overflow: hidden;
+}
+
+.basement-label {
+    float: left;
+}
+
+.basement-value {
+    float: right;
+}
+.photo-nav {
+    padding: 15px 0 9px 10px;
+}
+.photo-nav-list li{
+    position: relative;
+    overflow: hidden;
+}
+ .photo-nav-list {
+     list-style: none;
+     overflow: hidden;
+     line-height: 20px;
+ }
+
+
+
+.sidebar-list a:hover {
+    background: lightgray;
+}
+.sidebar-list a span:hover {
+    background: darkgray;
+}
+
+
+
+
+
+body {
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    line-height: 1.182;
+    font-weight: normal;
+}
+
+.header {
+    background: #4e729a;
+}

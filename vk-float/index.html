@@ -5,13 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>VK-FLOAT</title>
     <link rel="stylesheet" href="stylesheet.css"/>
-    <style>
-        div {
-            background-color: rgba(0, 0, 0, .1);
-            border: 1px solid rgba(0, 0, 0, .2);
-            padding: 2px;
-        }
-    </style>
+
 </head>
 <body>
 <div class="container">
@@ -30,58 +24,78 @@
     <div class="body">
         <div class="sidebar">
             <div class="sidebar-nav">
-                <div><a href=""> Моя Страница</a></div>
-                <div><a href="">Мои Друзья</a></div>
-                <div><a href="">Мои Фотографии</a></div>
-                <div><a href="">Мои Видеозаписи</a></div>
-                <div><a href="">Мои Аудиозаписи</a></div>
-                <div><a href="">Мои Сообщения</a></div>
-                <div><a href="">Мои Группы</a></div>
-                <div><a href="">Мои Новости</a></div>
-                <div><a href="">Мои Ответы</a></div>
-                <div><a href="">Мои Закладки</a></div>
-                <div><a href="">Мои Настройки</a></div>
-                <div><hr/></div>
-                <div><a href="">Приложения</a></div>
-                <div><a href="">Документы</a></div>
+                <ul class="sidebar-list">
+                    <li>
+                        <a class="sidebar-nav-box-myp" href="">Моя Страница</a>
+                        <a class="sidebar-nav-box-sm-myp" href="">ред.</a>
+                    </li>
+                    <li><a class="sidebar-nav-box" href="">Мои Друзья</a></li>
+                    <li>
+                        <a class="sidebar-nav-box-l" href=""> Мои Фотографии
+                            <span class="sidebar-nav-box-r" href="">+4</span>
+                        </a>
+                    </li>
+                    <li><a class="sidebar-nav-box" href="">Мои Видеозаписи</a></li>
+                    <li><a class="sidebar-nav-box" href="">Мои Аудиозаписи</a></li>
+                    <li><a class="sidebar-nav-box-l" href=""> Мои Сообщения
+                        <span class="sidebar-nav-box-r" href="">+53</span></a></li>
+                    <li><a class="sidebar-nav-box-l" href=""> Мои Группы
+                        <span class="sidebar-nav-box-r" href="">+20</span></a></li>
+                    <li><a class="sidebar-nav-box" href="">Мои Новости</a></li>
+                    <li><a class="sidebar-nav-box" href="">Мои Ответы</a></li>
+                    <li><a class="sidebar-nav-box" href="">Мои Закладки</a></li>
+                    <li><a class="sidebar-nav-box" href="">Мои Настройки</a></li>
+
+                        <hr/>
+                    <li><a class="sidebar-nav-box" href="">Приложения</a></li>
+                    <li><a class="sidebar-nav-box" href="">Документы</a></li>
+                </ul>
             </div>
             <div class="sidebar-alert">
-                <h1>Напоминие</h1>
-
-                <p><a href="">Сегодня</a> день рождения у <a href=""> Юленьки Потиевской</a></p>
+                <h3>Напоминание</h3>
+                <p><a href="">Сегодня</a> день рождения <a href=""> Юленьки Потиевской</a></p>
             </div>
             <div>
                 <hr/>
             </div>
             <div class="advert">
-                <h1>Ноты</h1>
-
+                <h3>Ноты</h3>
                 <p>Страница</p>
-
                 <div><img class="advert_post" src="images/skrip_kl.png" alt=""/></div>
             </div>
         </div>
         <div class="main">
-            <div class="main-title">Маша Романюк</div>
+            <div class="main-title"> <h4>Маша Романюк</h4></div>
             <div class="main-body">
                 <div class="main-side">
                     <div class="photo">
                         <div class="photo-img"><a href=""> <img class="gen-photo" src="images/general_masha.jpg"
                                                                 alt=""/></a></div>
                         <div class="photo-nav">
-                            <div><a href="">Редактировать страницу</a></div>
-                            <div>
-                                <hr/>
-                            </div>
-                            <div><a href="">Фотографии со мной</a></div>
-                            <div><a href="">Видеозаписи со мной</a></div>
-                            <div><a href="">Мои подписчики</a></div>
+                            <ul class="photo-nav-list">
+                                <li>
+                                    <a class="sidebar-nav-box" href="">Редактировать страницу </a>
+                                </li>
+                                    <hr />
+                                <li>
+                                    <a class="sidebar-nav-box" href=""> Фотографии со мной</a>
+                                    <a href=""> 26 <img src="images/photo-icon.jpg" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="">Видеозаписи со мной</a>
+                                    <a href="">40 <img src="images/video-icons.jpg" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href=""> Мои подписчики</a>
+                                    <a href="">45 <img src="images/script-icon.jpg" alt=""/></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="gifts">
                         <div><a href="">Подарки</a></div>
-                        <div class="pic-gift"><a href=""> <img class="picture" src="images/gift1.png" alt=""/></a></div>
-                        <div class="pic-gift"><a href=""> <img class="picture" src="images/gift2.png" alt=""/></a></div>
+                        <div class="pic-gift"><div ><a href=""> <img class="picture" src="images/gift1.png" alt=""/></a></div>
+                        <div><a href=""> <img class="picture" src="images/gift2.png" alt=""/></a></div></div>
                     </div>
                     <div class="friends-wrapper">
                         <div class="friends">
@@ -146,7 +160,7 @@
                             <div class="info-label">Образование:</div>
                             <div class="info-value">НАИИА (НАОМА)'14</div>
                         </div>
-                        <div><a href="">Показать подробную информацию</a></div>
+                        <div><a class="info-details" href="">Показать подробную информацию</a></div>
                     </div>
                     <div class="main-photo">
                         <div>
@@ -155,30 +169,32 @@
                             <div class="photo-value"><a href="">добавить фотографии</a></div>
                             </div>
                             <div class="photos_prof">
-                                <img src="images/masha_foto.jpg" alt=""/>
-                                <img src="images/masha_foto2.jpg" alt=""/>
-                                <img src="images/masha_foto3.jpg" alt=""/>
-                                <img src="images/masha_foto4.jpg" alt=""/>
-                                <img src="images/masha_foto5.jpg" alt=""/>
+                                <img class="photo-prof-id" src="images/masha_foto.jpg" alt=""/>
+                                <img class="photo-prof-id" src="images/masha_foto2.jpg" alt=""/>
+                                <img class="photo-prof-id" src="images/masha_foto3.jpg" alt=""/>
+                                <img class="photo-prof-id" src="images/masha_foto4.jpg" alt=""/>
+                                <img class="photo-prof-id" src="images/masha_foto5.jpg" alt=""/>
                             </div>
                         </div>
                     </div>
                     <div class="wall">
                         <div class="wall-form">
-                            <div>891 запись</div>
-                            <div><a href=""> к записям Маши</a></div>
-                            <div><input placeholder="Что у вас нового?" type="text"/></div>
+                            <div class="wall-form-header">
+                                <div class="wall-label">891 запись</div>
+                                <div class="wall-value"><a href=""> к записям Маши</a></div>
+                            </div>
+                            <div><input class="wall-input" placeholder="Что у вас нового?" type="text"/></div>
                         </div>
                         <div class="wall-content">
                             <div class="post">
-                                <div><a href=""></a><img src="images/masha_friends_foto_post.jpg" alt=""/></div>
-                                <div>
-                                    <div><a href="">Юлия Чернявская</a></div>
-                                    <div><a href=""> <img src="images/post_foto1.jpg" alt=""/></a></div>
-                                    <div>
-                                        <div><a href="">9июн в 17.02</a><span>|</span> <a href="">Комментировать</a>
+                                <div class="post-left"><a href=""></a><img class="post-pict-id" src="images/masha_friends_foto_post.jpg" alt=""/></div>
+                                <div class="post-right">
+                                    <div class="post-name"><a href="">Юлия Чернявская</a></div>
+                                    <div><a href=""> <img class="post-info" src="images/post_foto1.jpg" alt=""/></a></div>
+                                    <div class="post-basement">
+                                        <div class="basement-label"><a href="">9июн в 17.02</a><span>|</span> <a href="">Комментировать</a>
                                         </div>
-                                        <div><a href="">Мне нравится</a></div>
+                                        <div class="basement-value"><a href="">Мне нравится</a></div>
                                     </div>
                                 </div>
 
